@@ -72,6 +72,27 @@ const App = () => {
   );
 };
 
+class HelloWorld extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      name: "React Native in Action"
+    }
+  }
+
+  componentDidMount() {
+    console.log('mounted...')
+  }
+
+  render() {
+    return 
+      <View style={styles.container}>
+        <Text>{this.state.name}</Text>
+      </View>
+  }
+}
+
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
@@ -109,6 +130,10 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
+  container: {
+    marginTop: 100,
+    flex: 1 
+  }
 });
 
 export default App;
