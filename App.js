@@ -20,12 +20,14 @@ import {
 import MyComponent from './UnderstandingComponents';
 import MyStaticPropsComponent from './StaticProps';
 import MyDynamicPropsComponent from './DynamicProps';
+import AnotherComponent from './PropsFromState';
 
 const App = () => {
   return (
     <>
       <MyStaticPropsComponent/>
       <MyDynamicPropsComponent/>
+      <AnotherComponent/>
     </>
   );
 };
