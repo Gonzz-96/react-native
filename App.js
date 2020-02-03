@@ -8,52 +8,28 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 import MyComponent from './UnderstandingComponents';
+import MyStaticPropsComponent from './StaticProps';
+import MyDynamicPropsComponent from './DynamicProps';
 
 const App = () => {
   return (
     <>
-      <MyComponent/>
+      <MyStaticPropsComponent/>
+      <MyDynamicPropsComponent/>
     </>
   );
 };
 
-class HelloWorld extends React.Component {
-
-  constructor() {
-    super()
-    this.state = {
-      name: "React Native in Action"
-    }
-  }
-
-  componentDidMount() {
-    console.log('mounted...')
-  }
-
-  render() {
-    return 
-      <View style={styles.container}>
-        <Text>{this.state.name}</Text>
-      </View>
-  }
-}
 
 const styles = StyleSheet.create({
   scrollView: {
