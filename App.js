@@ -17,10 +17,10 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import MyComponent from './UnderstandingComponents';
-import MyStaticPropsComponent from './StaticProps';
-import MyDynamicPropsComponent from './DynamicProps';
-import AnotherComponent from './PropsFromState';
+import MyComponent from './mycomponents/UnderstandingComponents';
+import MyStaticPropsComponent from './mycomponents/StaticProps';
+import MyDynamicPropsComponent from './mycomponents/DynamicProps';
+import AnotherComponent from './mycomponents/PropsFromState';
 
 const App = () => {
   return (

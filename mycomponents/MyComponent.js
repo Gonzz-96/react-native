@@ -38,7 +38,7 @@ const Header = () => (
   </View>
 )
 
-const Main = () = (
+const Main = () => (
   <View>
     <Text>Main</Text>
   </View>
