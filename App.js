@@ -3,7 +3,6 @@
  * https://github.com/facebook/react-native
  *
  * @format
- * @flow
  */
 
 import React from 'react';
@@ -21,6 +20,7 @@ import MyComponent from './mycomponents/UnderstandingComponents';
 import MyStaticPropsComponent from './mycomponents/StaticProps';
 import MyDynamicPropsComponent from './mycomponents/DynamicProps';
 import AnotherComponent from './mycomponents/PropsFromState';
+import DestructuringComponent from './mycomponents/DestructuringComponent';
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
       <MyStaticPropsComponent/>
       <MyDynamicPropsComponent/>
       <AnotherComponent/>
+      <DestructuringComponent/>
     </>
   );
 };
