@@ -21,6 +21,9 @@ import MyStaticPropsComponent from './mycomponents/StaticProps';
 import MyDynamicPropsComponent from './mycomponents/DynamicProps';
 import AnotherComponent from './mycomponents/PropsFromState';
 import DestructuringComponent from './mycomponents/DestructuringComponent';
+import StatelessBookDisplay from './mycomponents/StatelessBookDisplay';
+
+let bookName = 'My Book In Action';
 
 const App = () => {
   return (
@@ -29,6 +32,9 @@ const App = () => {
       <MyDynamicPropsComponent/>
       <AnotherComponent/>
       <DestructuringComponent/>
+      <StatelessBookDisplay 
+        book={ bookName }
+        updateBook={ () => bookName = 'Pressed!' }/>
     </>
   );
 };
