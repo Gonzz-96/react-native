@@ -22,6 +22,7 @@ import MyDynamicPropsComponent from './mycomponents/DynamicProps';
 import AnotherComponent from './mycomponents/PropsFromState';
 import DestructuringComponent from './mycomponents/DestructuringComponent';
 import StatelessBookDisplay from './mycomponents/StatelessBookDisplay';
+import ArrayPropsComponent from './mycomponents/ArrayObjectsAsProps';
 
 let bookName = 'My Book In Action';
 
@@ -35,6 +36,7 @@ const App = () => {
       <StatelessBookDisplay 
         book={ bookName }
         updateBook={ () => bookName = 'Pressed!' }/>
+        <ArrayPropsComponent />
     </>
   );
 };
